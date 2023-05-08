@@ -9,8 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
+public class AppTest {
     /**
      * float transferir(float saldo, float cantidad, String destino)
      * X: (saldo-cantidad) -- OK
@@ -60,7 +59,7 @@ public class AppTest
 
     @Test
     void cantidadIntervaloTest() {
-       float cantidadTrue = 100f;
+        float cantidadTrue = 100f;
         float cantidadC1 = 0.51f;
         float cantidadC2 = 0.50f;
         float cantidadC3 = 0.49f;

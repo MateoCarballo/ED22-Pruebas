@@ -16,7 +16,7 @@ public class BinaryTest {
         String notBinaryNumbers = "aaaa";
         Assertions.assertAll(
                 () -> assertTrue(Binary.isBinary(isBinary), "Caso Correcto"),
-                () -> assertFalse(Binary.isBinary(notBinaryNumbers), "Caso Falso con Numeros"),
+                () -> assertFalse(Binary.isBinary(notBinaryNumbers), "Caso Falso con Números"),
                 () -> assertFalse(Binary.isBinary(notBinaryLetters), "Caso Falso con Letras")
         );
     }

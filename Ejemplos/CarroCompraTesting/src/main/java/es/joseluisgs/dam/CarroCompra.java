@@ -1,21 +1,17 @@
 package es.joseluisgs.dam;
 
-/**
- * Hello world!
- *
- */
 public class CarroCompra {
+
+    static final float IVA = 21.0f;
+    static final float DESCUENTO = 10.f;
+
     public static void main(String[] args) {
         System.out.println("Carro Compra Ejemplo");
 
-        // Mi carro de compra
+        // Faltaría una UI que introdujese los valores
 
-        // Lo ideal es que lo introdujeran por teclado
-
-        int[]cantidades = new int[] {1, 2, 1};
-        float[] precios = new float[] {10.00f, 25.50f, 32.30f};
-        final float IVA = 21.0f;
-        final float DESCUENTO = 10.f;
+        int[] cantidades = new int[]{1, 2, 1};
+        float[] precios = new float[]{10.00f, 25.50f, 32.30f};
 
         boolean isValid = isLogintudNoCero(cantidades, precios) &&
                 isPreciosValidos(precios) &&
@@ -23,8 +19,7 @@ public class CarroCompra {
                 isDescuentoValido(DESCUENTO) &&
                 isImpuestoValido(IVA);
 
-        if(isValid) {
-
+        if (isValid) {
             float subTotal = getSubTotal(cantidades, precios);
             float descuentoAplicado = getDescuentoAplicado(subTotal, DESCUENTO);
             float precioConDescuento = subTotal - descuentoAplicado;
@@ -38,7 +33,7 @@ public class CarroCompra {
             System.out.println("Total: " + total);
 
         } else {
-            // Quí lo idea es meter 3 if para dar el menesaje claro al usuario
+            // TODO: meter 3 if para dar el mensaje claro al usuario
             System.err.println("Error en carro de compra. Los datos no son correctos");
         }
 
@@ -101,6 +96,6 @@ public class CarroCompra {
     }
 
     public static float redondeo(float cantidad) {
-        return (float) (Math.round(cantidad*100.0)/100.0);
+        return (float) (Math.round(cantidad * 100.0) / 100.0);
     }
 }

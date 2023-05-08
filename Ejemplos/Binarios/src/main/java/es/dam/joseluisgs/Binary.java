@@ -50,7 +50,7 @@ public class Binary {
 //        printBinary(num1);
 //        printBinary(num2);
 
-        // Ahora los sumamos, es uno mas para el acarreo
+        // Ahora los sumamos, es uno más para el acarreo
         int[] res = new int[max+1];
         int carry = 0;
         // Lo voy a hacer sin invertir
