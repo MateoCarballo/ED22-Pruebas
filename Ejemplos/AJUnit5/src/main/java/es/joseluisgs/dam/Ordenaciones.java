@@ -3,22 +3,21 @@ package es.joseluisgs.dam;
 public final class Ordenaciones {
 
     private Ordenaciones(){};
-    public static void burbuja(int[] V){
+    public static void burbuja(int[] vectorEntrada){
         int i, j;
-        int aux;
-        for(i=0;i<V.length-1;i++)
-            for(j=0;j<V.length-i-1;j++)
-                if(V[j+1]<V[j]){
-                    aux=V[j+1];
-                    V[j+1]=V[j];
-                    V[j]=aux;
+        int intercambio;
+        for(i=0;i<vectorEntrada.length-1;i++)
+            for(j=0;j<vectorEntrada.length-i-1;j++)
+                if(vectorEntrada[j+1]<vectorEntrada[j]){
+                    intercambio=vectorEntrada[j+1];
+                    vectorEntrada[j+1]=vectorEntrada[j];
+                    vectorEntrada[j]=intercambio;
                 }
     }
-
-    public static int busquedaSecuencial(int[] A, int x){
-        int i;
-        for(i=0;i<A.length;i++)
-            if(A[i]==x)
+    
+    public static int busquedaSecuencial(int[] matrizEntrada, int elementoBuscado){
+        for(int i=0;i<matrizEntrada.length;i++)
+            if(matrizEntrada[i]==elementoBuscado)
                 return i;
         return -1;
     }
