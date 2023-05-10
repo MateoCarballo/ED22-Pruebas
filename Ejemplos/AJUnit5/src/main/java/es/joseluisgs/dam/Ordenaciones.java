@@ -1,7 +1,7 @@
 package es.joseluisgs.dam;
 
 /**
- * Como su nombre indica esta clase contiene métodos para ordenar matrices.
+ * Contiene métodos para ordenar matrices.
  * Podemos ordenar vectores de enteros usando el método burbuja (bubble short).
  * NOTA: No devuelve nada porque no lo necesitamos al pasar la matriz como parámetro
  * modificamos directamente la matriz sin necesidad de devolver ningún valor.

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"es.joseluisgs.dam","l":"App"},{"p":"es.joseluisgs.dam","l":"OperacionesMatematicas"},{"p":"es.joseluisgs.dam","l":"OperacionesStrings"},{"p":"es.joseluisgs.dam","l":"Ordenaciones"}]
