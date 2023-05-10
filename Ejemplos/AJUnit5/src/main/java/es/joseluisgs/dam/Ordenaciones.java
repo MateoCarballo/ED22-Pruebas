@@ -14,7 +14,7 @@ public final class Ordenaciones {
                     vectorEntrada[j]=intercambio;
                 }
     }
-    
+
     public static int busquedaSecuencial(int[] matrizEntrada, int elementoBuscado){
         for(int i=0;i<matrizEntrada.length;i++)
             if(matrizEntrada[i]==elementoBuscado)
